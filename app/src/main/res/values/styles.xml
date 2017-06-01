@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- -->
+    <!-- Common Styles -->
+    <!-- -->
+    <style name="GEN_MatchCont_Centre">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="GEN_MatchW_WrapH_Centre">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+
+    <!-- -->
+    <!-- Specific Styles -->
+    <!-- -->
+
+    <!-- Splash Screen -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+
+    <!-- Header TextView -->
+    <!--<style name="HeaderView" parent="GEN_MatchW_WrapH_Centre">-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:padding">@dimen/activity_vertical_margin</item>-->
+        <!--<item name="android:background">@color/colorYellow</item>-->
+        <!--<item name="android:textColor">@color/colorText</item>-->
+        <!--<item name="android:textSize">@dimen/font_large</item>-->
+        <!--<item name="android:layout_marginBottom">@dimen/dimen_30dp</item>-->
+    <!--</style>-->
+
+    <!-- Linear Layout for Pick City screen -->
+    <style name="LlayoutCity" parent="GEN_MatchW_WrapH_Centre">
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_30dp</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Frame Layout for ripple effect on clickable TextViews on Pick City Screen -->
+    <style name="FLayoutCity">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- Clickable TextViews for selecting city -->
+    <style name="TextViewCity" parent="GEN_MatchW_WrapH_Centre">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:padding">@dimen/dimen_10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

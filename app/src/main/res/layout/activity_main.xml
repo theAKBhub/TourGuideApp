@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.tourguideapp.MainActivity">
+
+    <LinearLayout
+        style="@style/GEN_MatchCont_Centre"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorYellow"
+            android:elevation="@dimen/toolbar_elevation"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <LinearLayout
+            style="@style/LlayoutCity" >
+
+            <ImageView
+                android:src="@drawable/city_london"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:src="@drawable/city_rome"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LlayoutCity" >
+
+            <FrameLayout
+                style="@style/FLayoutCity">
+                <TextView
+                    android:id="@+id/text_select_london"
+                    android:text="@string/label_london"
+                    style="@style/TextViewCity" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                style="@style/FLayoutCity">
+                <TextView
+                    android:id="@+id/text_select_rome"
+                    android:text="@string/label_rome"
+                    style="@style/TextViewCity" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/GEN_MatchW_WrapH_Centre"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/city_paris"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:src="@drawable/city_newyork"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LlayoutCity" >
+
+            <FrameLayout
+                style="@style/FLayoutCity">
+                <TextView
+                    android:id="@+id/text_select_paris"
+                    android:text="@string/label_paris"
+                    style="@style/TextViewCity" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                style="@style/FLayoutCity">
+                <TextView
+                    android:id="@+id/text_select_newyork"
+                    android:text="@string/label_newyork"
+                    style="@style/TextViewCity" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

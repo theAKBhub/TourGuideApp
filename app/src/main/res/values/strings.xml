@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tour Guide App</string>
+
+    <!-- Labels -->
+    <string name="label_pick_city">Pick Your Destination</string>
+    <string name="label_london">London</string>
+    <string name="label_paris">Paris</string>
+    <string name="label_rome">Rome</string>
+    <string name="label_newyork">New York</string>
+</resources>
