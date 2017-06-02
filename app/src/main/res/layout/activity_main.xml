@@ -9,8 +9,9 @@
     tools:context="com.example.android.tourguideapp.MainActivity">
 
     <LinearLayout
-        style="@style/GEN_MatchCont_Centre"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -22,18 +23,19 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
         <LinearLayout
-            style="@style/LlayoutCity" >
+            style="@style/LlayoutCity"
+            android:layout_marginBottom="@dimen/dimen_10dp">
 
             <ImageView
                 android:src="@drawable/city_london"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/city_icon_height"
                 android:layout_weight="1"/>
 
             <ImageView
                 android:src="@drawable/city_rome"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="@dimen/city_icon_height"
                 android:layout_weight="1"/>
 
         </LinearLayout>
@@ -64,19 +66,19 @@
         </LinearLayout>
 
         <LinearLayout
-            style="@style/GEN_MatchW_WrapH_Centre"
-            android:orientation="horizontal">
+            style="@style/LlayoutCity"
+            android:layout_marginBottom="@dimen/dimen_10dp">
 
             <ImageView
                 android:src="@drawable/city_paris"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/city_icon_height"
                 android:layout_weight="1"/>
 
             <ImageView
                 android:src="@drawable/city_newyork"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="@dimen/city_icon_height"
                 android:layout_weight="1"/>
 
         </LinearLayout>

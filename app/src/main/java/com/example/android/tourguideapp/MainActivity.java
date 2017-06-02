@@ -4,9 +4,9 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
-import android.support.v7.widget.Toolbar;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar toolBar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolBar);
 
-
         // Initialize UI components
         mTextLondon = (TextView) findViewById(R.id.text_select_london);
         mTextParis = (TextView) findViewById(R.id.text_select_paris);
@@ -44,6 +43,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTextParis.setOnClickListener(this);
         mTextRome.setOnClickListener(this);
         mTextNewYork.setOnClickListener(this);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
     }
 
     /**
@@ -66,6 +75,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.text_select_london:
                 openTourActivity(getString(R.string.label_london));
                 break;
+            case R.id.text_select_paris:
+                openTourActivity(getString(R.string.label_paris));
+                break;
+            case R.id.text_select_rome:
+                openTourActivity(getString(R.string.label_rome));
+                break;
+            case R.id.text_select_newyork:
+                openTourActivity(getString(R.string.label_newyork));
+                break;
+            default:
+                openTourActivity(getString(R.string.label_london));
+                break;
         }
     }
 
@@ -78,4 +99,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         intent.putExtra("city", selectedCity);
         startActivity(intent);
     }
+
 }

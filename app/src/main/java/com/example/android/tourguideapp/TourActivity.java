@@ -1,29 +1,35 @@
 package com.example.android.tourguideapp;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 
 public class TourActivity extends AppCompatActivity {
 
-    private String mSelectedCity;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String selectedCity = "";
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tour);
 
-        Toolbar toolBar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolBar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-
+        // Get Intent Extras
         if (getIntent().getExtras() != null) {
             Bundle bundle = getIntent().getExtras();
-            mSelectedCity = bundle.getString("city");
-            Log.i("CityFragment", "Selected city = " + mSelectedCity);
+            selectedCity = bundle.getString("city");
         }
+
+        // Change Actionbar Label based on selected city
+        getSupportActionBar().setTitle(getSupportActionBar().getTitle() + " : " + selectedCity);
+
+        // Set up Tab Layout and ViewPager
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(new FragmentAdapter(getSupportFragmentManager(),
+                TourActivity.this));
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
+
     }
 
     @Override

@@ -7,4 +7,32 @@
     <string name="label_paris">Paris</string>
     <string name="label_rome">Rome</string>
     <string name="label_newyork">New York</string>
+
+
+    <!-- -->
+    <!-- Records for City Table -->
+    <!-- -->
+    <!-- Cities Table Records -->
+    <string-array name="cities_array">
+        <item>1|"London"|"UK"|"English"|"Heathrow,
+            London City, Gatwick"|"Tube, DLR, Bus, Rail, Cable Car, Cycling, Taxi"|
+            "London is the capital and most populous city of England and the United Kingdom. Standing on the River Thames and founded by the Romans, London has been a major settlement for two millennia. London is a leading global city in the fields of arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism, and transportation. It is recognised as the world's largest financial centre, world's cultural capital, world's most-visited city and city with world's largest airport system."|
+            "Europe/London"|"London,UK"
+        </item>
+        <item>
+            2|"Paris"|"France"|"French"|"Paris-Charles de Gaulle, Paris-Orly, Beauvais-Tillé"|"Metro, Bus, Rail, Tram, Cycling, Taxi"|
+            "Paris, located along the shores of River Seine, is the capital and most populous city of France. Paris is often referred to as \"The City of Light\" both because of its leading role during the Age of Enlightenment, and more literally because Paris was one of the first European cities to adopt gas street lighting. The city is recognised as the international capital of high fashion since the 19th century, particularly in the domain of haute couture. With more than 9,000 restaurants boasting every French regional cuisine and almost every national cuisine in the world, the city is also famous for its restaurants and haute cuisine."|
+            "Europe/Paris"|"Paris,FR"
+        </item>
+        <item>
+            3|"Rome"|"Italy"|"Italian"|"Leonardo da Vinci Airport, Rome Ciampino Airport"|"Metro, Bus, Rail, Tram"|
+            "Rome, the capital of Italy, is the country's largest and most populated city. The city is located along the shores of the Tiber. The Vatican City is an independent country geographically located within the city boundaries of Rome, the only existing example of a country within a city. This is the reason why Rome has been often defined as capital of two states. Rome is regarded as the most popular tourist attraction in Italy and its historic centre  is listed by UNESCO as a World Heritage Site."|
+            "Europe/Rome"|"Rome,IT"
+        </item>
+        <item>
+            4|"New York"|"USA"|"English"|"John F Kennedy Airport, Newark Liberty Airport, LaGuardia Airport"|"Subway, Bus, Rail, Cycling, Ferries, Taxi"|
+            "New York City is the most populous city in the United States. Being a global power city, it exerts a significant impact upon commerce, finance, media, art, fashion, research,  technology, education, and entertainment, its fast pace defining the term \"New York minute\". Home to the headquarters of the United Nations, New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world. NY is credited as the most photographed city in the world. Anchored by Wall Street in the Financial District of Lower Manhattan, the city is also called regarded as the leading financial center of the world. The city is also home to the world's two largest stock exchanges, the New York Stock Exchange and NASDAQ."|
+            "America/New_York"|"New York,US"
+        </item>
+    </string-array>
 </resources>
