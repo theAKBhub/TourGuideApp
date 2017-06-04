@@ -14,6 +14,7 @@ public class City {
     private String mCityShortDesc;
     private String mCityTimeZone;
     private String mCityWeatherZone;
+    private int mCityImage;
 
 
     /**
@@ -27,10 +28,11 @@ public class City {
      * @param cityShortDesc
      * @param cityTimeZone
      * @param cityWeatherZone
+     * @param cityImage
      */
     public City(int cityId, String cityName, String cityCountry, String cityLanguage,
                 String cityAirport, String cityTransport, String cityShortDesc,
-                String cityTimeZone, String cityWeatherZone) {
+                String cityTimeZone, String cityWeatherZone, int cityImage) {
         mCityId = cityId;
         mCityName = cityName;
         mCityCountry = cityCountry;
@@ -40,6 +42,7 @@ public class City {
         mCityShortDesc = cityShortDesc;
         mCityTimeZone = cityTimeZone;
         mCityWeatherZone = cityWeatherZone;
+        mCityImage = cityImage;
     }
 
     /**
@@ -193,4 +196,19 @@ public class City {
         return mCityWeatherZone;
     }
 
+    /**
+     * Setter method for City Image
+     * @param cityImage
+     */
+    public void setCityImage(int cityImage) {
+        mCityImage = cityImage;
+    }
+
+    /**
+     * Getter method for City Image
+     * @return city image
+     */
+    public int getCityImage() {
+        return mCityImage;
+    }
 }

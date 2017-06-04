@@ -35,6 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_CITY_SHORT_DESC = "city_short_desc";
     private static final String KEY_CITY_TIMEZONE = "city_time_zone";
     private static final String KEY_CITY_WEATHERZONE = "city_weather_zone";
+    private static final String KEY_CITY_IMAGE = "city_image";
 
     // Cities table create SQL
     private static final String CREATE_TABLE_CITIES = "CREATE TABLE "
@@ -46,7 +47,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + KEY_CITY_TRANSPORT + " TEXT,"
             + KEY_CITY_SHORT_DESC + " TEXT,"
             + KEY_CITY_TIMEZONE + " TEXT,"
-            + KEY_CITY_WEATHERZONE + " TEXT"
+            + KEY_CITY_WEATHERZONE + " TEXT,"
+            + KEY_CITY_IMAGE + " INTEGER"
             + ")";
 
 
@@ -94,6 +96,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_CITY_SHORT_DESC, city.getDescription()); // Description
         values.put(KEY_CITY_TIMEZONE, city.getCityTimeZone()); // Time Zone
         values.put(KEY_CITY_WEATHERZONE, city.getCityWeatherZone()); // Weather Zone
+        values.put(KEY_CITY_IMAGE, city.getCityImage()); // City Image
 
         db.insert(TABLE_CITIES, null, values); // Inserting Row
         db.close(); // Closing database connection
@@ -124,6 +127,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 city.setDescription(cursor.getString(6));
                 city.setCityTimeZone(cursor.getString(7));
                 city.setCityWeatherZone(cursor.getString(8));
+                city.setCityImage(cursor.getInt(9));
                 cityList.add(city);
             } while (cursor.moveToNext());
         }
@@ -155,6 +159,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 city.setDescription(cursor.getString(6));
                 city.setCityTimeZone(cursor.getString(7));
                 city.setCityWeatherZone(cursor.getString(8));
+                city.setCityImage(cursor.getInt(9));
                 cityList.add(city);
             } while (cursor.moveToNext());
         }

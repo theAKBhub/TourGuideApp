@@ -8,6 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import helper.DatabaseHelper;
+import model.City;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -43,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTextParis.setOnClickListener(this);
         mTextRome.setOnClickListener(this);
         mTextNewYork.setOnClickListener(this);
+
+        // Create and populate tables if they do not exist
+        insertCitiesRecords();
     }
 
     @Override
@@ -100,4 +106,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    /**
+     * This method creates and populates Cities table
+     */
+    public void insertCitiesRecords() {
+        int [] imageResources = {R.drawable.photo_london, R.drawable.photo_rome, R.drawable.photo_paris, R.drawable.photo_newyork};
+        String [] record = new String[7];
+        String [] records = getResources().getStringArray(R.array.cities_array);
+        int rowCount = 0;
+
+        DatabaseHelper db = new DatabaseHelper(getApplicationContext());
+//  db.deleteCities();
+        rowCount = db.getCitiesRowsCount();
+
+        if (rowCount == 0) {
+            for (int i = 0; i < records.length; i++) {
+                record = records[i].split("\\|");
+
+                db.createCity(new City(Integer.parseInt(record[0]), record[1], record[2],
+                        record[3], record[4], record[5], record[6], record[7], record[8],
+                        imageResources[i]
+                ));
+            }
+        }
+
+    }
 }

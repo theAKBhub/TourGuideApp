@@ -23,10 +23,16 @@
     <dimen name="font_large">20sp</dimen>
     <dimen name="font_xlarge">24sp</dimen>
 
+    <!-- Font size for Time Display -->
+    <dimen name="textsize_time">32sp</dimen>
+
     <!-- Material UI Recommended elevation for Custom Toolbar -->
     <dimen name="toolbar_elevation">4dp</dimen>
 
     <!-- City Icon Height -->
     <dimen name="city_icon_height">150dp</dimen>
+
+    <!-- Tab Layout padding -->
+    <dimen name="tab_padding">12dp</dimen>
 
 </resources>

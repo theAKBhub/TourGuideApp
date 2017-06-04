@@ -7,6 +7,18 @@
     <string name="label_paris">Paris</string>
     <string name="label_rome">Rome</string>
     <string name="label_newyork">New York</string>
+    <string name="label_europe">Europe</string>
+    <string name="label_america">America</string>
+    <string name="label_country">Country</string>
+    <string name="label_language">Main Language</string>
+    <string name="label_airports">Main Airports</string>
+    <string name="label_transport">Modes of Transport</string>
+    <string name="label_forecast">5 Day Forecast</string>
+    <string name="label_time">Local Time</string>
+    <string name="label_about_city">About the City</string>
+
+    <!-- OpenWeather App ID -->
+    <string name="openweather_appid">620f71466346984f2c78163e643df7aa</string>
 
 
     <!-- -->
@@ -14,8 +26,7 @@
     <!-- -->
     <!-- Cities Table Records -->
     <string-array name="cities_array">
-        <item>1|"London"|"UK"|"English"|"Heathrow,
-            London City, Gatwick"|"Tube, DLR, Bus, Rail, Cable Car, Cycling, Taxi"|
+        <item>1|"London"|"UK"|"English"|"Heathrow, London City, Gatwick"|"Tube, DLR, Bus, Rail, Cable Car, Cycling, Taxi"|
             "London is the capital and most populous city of England and the United Kingdom. Standing on the River Thames and founded by the Romans, London has been a major settlement for two millennia. London is a leading global city in the fields of arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism, and transportation. It is recognised as the world's largest financial centre, world's cultural capital, world's most-visited city and city with world's largest airport system."|
             "Europe/London"|"London,UK"
         </item>
@@ -25,14 +36,21 @@
             "Europe/Paris"|"Paris,FR"
         </item>
         <item>
-            3|"Rome"|"Italy"|"Italian"|"Leonardo da Vinci Airport, Rome Ciampino Airport"|"Metro, Bus, Rail, Tram"|
+            3|"Rome"|"Italy"|"Italian"|"Leonardo da Vinci Airport, Rome Ciampino Airport"|"Metro, Bus, Trolleybus, Rail, Tram"|
             "Rome, the capital of Italy, is the country's largest and most populated city. The city is located along the shores of the Tiber. The Vatican City is an independent country geographically located within the city boundaries of Rome, the only existing example of a country within a city. This is the reason why Rome has been often defined as capital of two states. Rome is regarded as the most popular tourist attraction in Italy and its historic centre  is listed by UNESCO as a World Heritage Site."|
             "Europe/Rome"|"Rome,IT"
         </item>
         <item>
-            4|"New York"|"USA"|"English"|"John F Kennedy Airport, Newark Liberty Airport, LaGuardia Airport"|"Subway, Bus, Rail, Cycling, Ferries, Taxi"|
+            4|"New York"|"USA"|"English"|"JFK Airport, Newark Liberty Airport, LaGuardia Airport"|"Subway, Bus, Rail, Cycling, Ferries, Taxi"|
             "New York City is the most populous city in the United States. Being a global power city, it exerts a significant impact upon commerce, finance, media, art, fashion, research,  technology, education, and entertainment, its fast pace defining the term \"New York minute\". Home to the headquarters of the United Nations, New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world. NY is credited as the most photographed city in the world. Anchored by Wall Street in the Financial District of Lower Manhattan, the city is also called regarded as the leading financial center of the world. The city is also home to the world's two largest stock exchanges, the New York Stock Exchange and NASDAQ."|
             "America/New_York"|"New York,US"
         </item>
     </string-array>
+
+
+    <!-- -->
+    <!-- Log Exception Error Messages -->
+    <!-- -->
+    <string name="err_json_parsing">Problem parsing the Weather JSON results</string>
+    <string name="err_create_url">Error with creating URL</string>
 </resources>
