@@ -22,7 +22,6 @@
         <item name="tabIndicatorHeight">@dimen/dimen_3dp</item>
         <item name="tabPaddingStart">@dimen/tab_padding</item>
         <item name="tabPaddingEnd">@dimen/tab_padding</item>
-        <item name="tabBackground">@color/colorYellow</item>
         <item name="tabTextAppearance">@style/CustomTabAppearance</item>
         <item name="tabGravity">fill</item>
     </style>
@@ -47,7 +46,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
     </style>
-
 
 
     <!-- -->
@@ -136,11 +134,21 @@
         <item name="android:layout_marginBottom">@dimen/dimen_10dp</item>
     </style>
 
+    <!-- ListView TextView Items -->
+    <style name="ListTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:gravity">bottom</item>
+    </style>
 
-
-
-
-
+    <!-- PlaceActivity TextView style -->
+    <style name="PlaceTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/activity_margin</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20dp</item>
+    </style>
 
 
 

@@ -17,13 +17,13 @@ import helper.DatabaseHelper;
 import model.Places;
 
 /**
- * Created by aditibhattacharya on 01/06/2017.
+ * Created by aditibhattacharya on 07/06/2017.
  */
 
-public class SightsFragment extends Fragment {
+public class DiningFragment  extends Fragment {
 
-    private static final String LOG_TAG = "SightsFragment";
-    private static final String PLACE_TYPE = "Sight";
+    private static final String LOG_TAG = "DiningFragment";
+    private static final String PLACE_TYPE = "Dining";
 
     private View view;
     private String mSelectedCity;

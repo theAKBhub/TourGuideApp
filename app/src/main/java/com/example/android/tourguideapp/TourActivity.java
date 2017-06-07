@@ -38,4 +38,8 @@ public class TourActivity extends AppCompatActivity {
         return true;
     }
 
+    public void setActionBarTitle(String title){
+        getSupportActionBar().setTitle(title);
+    }
+
 }

@@ -14,6 +14,7 @@
     <dimen name="dimen_30dp">30dp</dimen>
     <dimen name="dimen_40dp">40dp</dimen>
     <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_55dp">55dp</dimen>
     <dimen name="dimen_80dp">80dp</dimen>
     <dimen name="dimen_64dp">64dp</dimen>
 
@@ -35,4 +36,7 @@
     <!-- Tab Layout padding -->
     <dimen name="tab_padding">12dp</dimen>
 
+    <!-- List Item Dimension -->
+    <dimen name="list_item_height">100dp</dimen>
+    <dimen name="list_image_width">88dp</dimen>
 </resources>

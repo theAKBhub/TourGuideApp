@@ -16,6 +16,13 @@
     <string name="label_forecast">5 Day Forecast</string>
     <string name="label_time">Local Time</string>
     <string name="label_about_city">About the City</string>
+    <string name="label_btn_website">Visit Website</string>
+
+    <string name="label_tab_1">City</string>
+    <string name="label_tab_2">Sights</string>
+    <string name="label_tab_3">Tours</string>
+    <string name="label_tab_4">Hotels</string>
+    <string name="label_tab_5">Dining</string>
 
     <!-- OpenWeather App ID -->
     <string name="openweather_appid">620f71466346984f2c78163e643df7aa</string>
@@ -44,6 +51,63 @@
             4|"New York"|"USA"|"English"|"JFK Airport, Newark Liberty Airport, LaGuardia Airport"|"Subway, Bus, Rail, Cycling, Ferries, Taxi"|
             "New York City is the most populous city in the United States. Being a global power city, it exerts a significant impact upon commerce, finance, media, art, fashion, research,  technology, education, and entertainment, its fast pace defining the term \"New York minute\". Home to the headquarters of the United Nations, New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world. NY is credited as the most photographed city in the world. Anchored by Wall Street in the Financial District of Lower Manhattan, the city is also called regarded as the leading financial center of the world. The city is also home to the world's two largest stock exchanges, the New York Stock Exchange and NASDAQ."|
             "America/New_York"|"New York,US"
+        </item>
+    </string-array>
+
+
+    <!-- Places Table Records -->
+    <string-array name="places_array">
+
+        <!-- London Sights -->
+        <item>
+            1|"London"|"Buckingham Palace"|"Sight"|"Besides being the London residence of the Royal Family, this is also famous for the Changing of the Guard."|
+            "Buckingham Palace is the London residence and administrative headquarters of the reigning monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. Buckingham Palace has served as the official London residence of the UK’s sovereigns since 1837 following the accession of Queen Victoria. With 775 rooms including 19 State rooms, 52 Royal and guest bedrooms, 188 staff bedrooms, 92 offices and 78 bathrooms, this palace is one of the most iconic buildings and landmarks in the heart of England."|
+            "https://www.royalcollection.org.uk/"|0|"london_buckingham_palace"
+        </item>
+        <item>
+            2|"London"|"Big Ben"|"Sight"|"This is the 96-meter tower near Westminster, housing a giant clock and its resounding bell known as Big Ben."|
+            "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London. The tower is 96-m (315 ft) high, housing a giant bell, and designed in Gothic Revival style. The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower. A British cultural icon, the tower is one of the most prominent symbols of the United Kingdom and is often in the establishing shot of films set in London. "|
+            "http://www.parliament.uk/bigben"|0|"london_big_ben"
+        </item>
+        <item>
+            3|"London"|"Big Ben"|"Sight"|"This is the 96-meter tower near Westminster, housing a giant clock and its resounding bell known as Big Ben."|
+            "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London. The tower is 96-m (315 ft) high, housing a giant bell, and designed in Gothic Revival style. The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower. A British cultural icon, the tower is one of the most prominent symbols of the United Kingdom and is often in the establishing shot of films set in London. "|
+            "http://www.parliament.uk/bigben"|0|"london_big_ben"
+        </item>
+        <item>
+            4|"London"|"Big Ben"|"Sight"|"This is the 96-meter tower near Westminster, housing a giant clock and its resounding bell known as Big Ben."|
+            "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London. The tower is 96-m (315 ft) high, housing a giant bell, and designed in Gothic Revival style. The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower. A British cultural icon, the tower is one of the most prominent symbols of the United Kingdom and is often in the establishing shot of films set in London. "|
+            "http://www.parliament.uk/bigben"|0|"london_big_ben"
+        </item>
+        <item>
+            5|"London"|"Big Ben"|"Sight"|"This is the 96-meter tower near Westminster, housing a giant clock and its resounding bell known as Big Ben."|
+            "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London. The tower is 96-m (315 ft) high, housing a giant bell, and designed in Gothic Revival style. The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower. A British cultural icon, the tower is one of the most prominent symbols of the United Kingdom and is often in the establishing shot of films set in London. "|
+            "http://www.parliament.uk/bigben"|0|"london_big_ben"
+        </item>
+        <item>
+            6|"London"|"Big Ben"|"Sight"|"This is the 96-meter tower near Westminster, housing a giant clock and its resounding bell known as Big Ben."|
+            "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London. The tower is 96-m (315 ft) high, housing a giant bell, and designed in Gothic Revival style. The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower. A British cultural icon, the tower is one of the most prominent symbols of the United Kingdom and is often in the establishing shot of films set in London. "|
+            "http://www.parliament.uk/bigben"|0|"london_big_ben"
+        </item>
+        <item>
+            7|"London"|"Big Ben"|"Sight"|"This is the 96-meter tower near Westminster, housing a giant clock and its resounding bell known as Big Ben."|
+            "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London. The tower is 96-m (315 ft) high, housing a giant bell, and designed in Gothic Revival style. The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower. A British cultural icon, the tower is one of the most prominent symbols of the United Kingdom and is often in the establishing shot of films set in London. "|
+            "http://www.parliament.uk/bigben"|0|"london_big_ben"
+        </item>
+        <item>
+            8|"London"|"Big Ben"|"Sight"|"This is the 96-meter tower near Westminster, housing a giant clock and its resounding bell known as Big Ben."|
+            "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London. The tower is 96-m (315 ft) high, housing a giant bell, and designed in Gothic Revival style. The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower. A British cultural icon, the tower is one of the most prominent symbols of the United Kingdom and is often in the establishing shot of films set in London. "|
+            "http://www.parliament.uk/bigben"|0|"london_big_ben"
+        </item>
+        <item>
+            9|"London"|"Big Ben"|"Sight"|"This is the 96-meter tower near Westminster, housing a giant clock and its resounding bell known as Big Ben."|
+            "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London. The tower is 96-m (315 ft) high, housing a giant bell, and designed in Gothic Revival style. The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower. A British cultural icon, the tower is one of the most prominent symbols of the United Kingdom and is often in the establishing shot of films set in London. "|
+            "http://www.parliament.uk/bigben"|0|"london_big_ben"
+        </item>
+        <item>
+            10|"London"|"Big Ben"|"Sight"|"This is the 96-meter tower near Westminster, housing a giant clock and its resounding bell known as Big Ben."|
+            "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London. The tower is 96-m (315 ft) high, housing a giant bell, and designed in Gothic Revival style. The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower. A British cultural icon, the tower is one of the most prominent symbols of the United Kingdom and is often in the establishing shot of films set in London. "|
+            "http://www.parliament.uk/bigben"|0|"london_big_ben"
         </item>
     </string-array>
 

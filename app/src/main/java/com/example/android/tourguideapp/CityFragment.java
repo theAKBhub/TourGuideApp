@@ -37,7 +37,7 @@ import model.City;
 
 public class CityFragment extends Fragment {
 
-    private String LOG_TAG = "CityFragment";
+    private static final String LOG_TAG = "CityFragment";
 
     private View view;
     private String mSelectedCity;
@@ -64,14 +64,14 @@ public class CityFragment extends Fragment {
     private TextView mTextViewAbout;
 
     // OpenWeather Variables
-    private String WEATHER_REQUEST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?q=%s&units=%s&appid=%s";
-    private String WEATHER_METRICS = "metric";
-    private String WEATHER_LIST_ARRAY = "list";
-    private String WEATHER_DATETIME = "dt";
-    private String WEATHER_TEMP_OBJECT = "temp";
-    private String WEATHER_DAY_TEMP = "day";
-    private String WEATHER_WTHR_OBJECT = "weather";
-    private String WEATHER_CONDITION = "main";
+    private static final String WEATHER_REQUEST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?q=%s&units=%s&appid=%s";
+    private static final String WEATHER_METRICS = "metric";
+    private static final String WEATHER_LIST_ARRAY = "list";
+    private static final String WEATHER_DATETIME = "dt";
+    private static final String WEATHER_TEMP_OBJECT = "temp";
+    private static final String WEATHER_DAY_TEMP = "day";
+    private static final String WEATHER_WTHR_OBJECT = "weather";
+    private static final String WEATHER_CONDITION = "main";
 
 
     @Override

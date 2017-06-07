@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.android.tourguideapp">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -25,13 +25,19 @@
         <activity
             android:name=".MainActivity"
             android:configChanges="navigation|orientation|screenSize|screenLayout|layoutDirection"
+            android:launchMode="singleTop"
             android:label="Choose your destination">
         </activity>
-        <activity android:name=".TourActivity"
-            android:theme="@style/TitleBarTheme"
-            android:parentActivityName=".MainActivity"
+        <activity
+            android:name=".TourActivity"
             android:configChanges="navigation|orientation|screenSize|screenLayout|layoutDirection"
-            android:label="City Tours">
+            android:label="City Attractions"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/TitleBarTheme">
+        </activity>
+        <activity android:name=".PlaceActivity"
+             android:configChanges="navigation|orientation|screenSize|screenLayout|layoutDirection"
+             android:parentActivityName=".TourActivity" >
         </activity>
     </application>
 

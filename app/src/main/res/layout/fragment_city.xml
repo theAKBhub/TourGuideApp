@@ -3,6 +3,7 @@
             xmlns:tools="http://schemas.android.com/tools"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:fillViewport="true"
+            android:background="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -33,7 +34,6 @@
                     android:text="@string/label_forecast" />
 
                 <TextView
-                    android:text="01/06  12C  Clear Sky\n02/06  11C  Rain\n03/06  12C  Partly Cloudy\n04/06  10C  Clear Sky\n05/06  15C  Sunny"
                     android:id="@+id/text_panel_weather"
                     style="@style/CityPanelGreen"  />
 

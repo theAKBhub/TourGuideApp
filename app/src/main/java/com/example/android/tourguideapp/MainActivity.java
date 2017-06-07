@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import helper.DatabaseHelper;
 import model.City;
+import model.Places;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Create and populate tables if they do not exist
         insertCitiesRecords();
+        insertPlacesRecords();
     }
 
     @Override
@@ -116,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int rowCount = 0;
 
         DatabaseHelper db = new DatabaseHelper(getApplicationContext());
-//  db.deleteCities();
+db.deleteCities();
         rowCount = db.getCitiesRowsCount();
 
         if (rowCount == 0) {
@@ -129,6 +131,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ));
             }
         }
-
     }
+
+    /**
+     * This method creates and populates Places table
+     */
+    public void insertPlacesRecords() {
+        String [] record = new String[8];
+        String [] records = getResources().getStringArray(R.array.places_array);
+        int rowCount = 0;
+
+        DatabaseHelper db = new DatabaseHelper(getApplicationContext());
+  db.deletePlaces();
+        rowCount = db.getPlacesRowsCount();
+
+        if (rowCount == 0) {
+            for (int i = 0; i < records.length; i++) {
+                record = records[i].split("\\|");
+
+                db.createPlaces(new Places(Integer.parseInt(record[0]), record[1], record[2],
+                        record[3], record[4], record[5], record[6], Integer.parseInt(record[7]), record[8]
+                ));
+            }
+        }
+    }
+
 }

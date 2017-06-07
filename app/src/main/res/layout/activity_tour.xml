@@ -5,11 +5,13 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+              android:background="@color/colorYellow"
               tools:context="com.example.android.tourguideapp.TourActivity">
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
-        style="@style/CustomTabLayout" />
+        style="@style/CustomTabLayout"
+        app:tabMode="scrollable" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

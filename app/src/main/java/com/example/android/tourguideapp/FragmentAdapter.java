@@ -16,13 +16,16 @@ import android.text.style.ImageSpan;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
 
-    final int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[] { "CITY", "SIGHTS" };
+    final int PAGE_COUNT = 5;
+    private String tabTitles[] = new String[] { "City", "Sights", "Tours", "Hotels", "Dining" };
     private Context context;
 
     private int[] imageResId = {
             R.drawable.ic_location_city_black_24dp,
-            R.drawable.ic_local_activity_black_24dp
+            R.drawable.ic_local_activity_black_24dp,
+            R.drawable.ic_directions_bus_black_24dp,
+            R.drawable.ic_hotel_black_24dp,
+            R.drawable.ic_local_dining_black_24dp
     };
 
 
@@ -41,15 +44,15 @@ public class FragmentAdapter extends FragmentPagerAdapter {
             case 1:
                 fragment =  new SightsFragment();
                 break;
-         /*   case 2:
+            case 2:
                 fragment =  new ToursFragment();
                 break;
             case 3:
                 fragment =  new HotelsFragment();
                 break;
             case 4:
-                fragment =  new RestaurantsFragment();
-                break; */
+                fragment =  new DiningFragment();
+                break;
             default:
                 fragment = new CityFragment();
                 break;
@@ -66,7 +69,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
 
-        // Return image resources and ttitles for tab icons
+        // Return image resources and titles for tab icons
         Drawable image = ContextCompat.getDrawable(context, imageResId[position]);
         image.setBounds(0, 0, image.getIntrinsicWidth(), image.getIntrinsicHeight());
 
