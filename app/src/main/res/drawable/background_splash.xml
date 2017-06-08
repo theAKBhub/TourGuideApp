@@ -2,12 +2,12 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:drawable="@drawable/splash"/>
+        android:drawable="@drawable/splash_bg"/>
 
     <item>
         <bitmap
             android:gravity="top"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/logo_bg"/>
     </item>
 
 </layer-list>
