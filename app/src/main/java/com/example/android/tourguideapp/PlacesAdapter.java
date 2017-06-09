@@ -25,11 +25,23 @@ public class PlacesAdapter extends ArrayAdapter<Places> {
     private Context mContext;
 
 
+    /**
+     * Default Constructor
+     * @param context
+     * @param places
+     */
     public PlacesAdapter (Activity context, ArrayList<Places> places) {
         super(context, 0, places);
         mContext = context;
     }
 
+    /**
+     * Prepares and returns listview
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return
+     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 

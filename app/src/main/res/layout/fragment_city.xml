@@ -26,8 +26,8 @@
 
                 <ImageView
                     android:id="@+id/image_city"
-                    android:layout_width="@dimen/city_icon_height"
-                    android:layout_height="160dp"/>
+                    android:layout_width="@dimen/city_icon_width"
+                    android:layout_height="@dimen/city_icon_height"/>
 
                 <TextView
                     style="@style/PanelHeader"

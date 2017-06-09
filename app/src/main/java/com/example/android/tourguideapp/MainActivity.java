@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * This method creates and populates Cities table
      */
     public void insertCitiesRecords() {
-        int [] imageResources = {R.drawable.photo_london, R.drawable.photo_rome, R.drawable.photo_paris, R.drawable.photo_newyork};
+        int [] imageResources = {R.drawable.photo_london, R.drawable.photo_paris, R.drawable.photo_rome,  R.drawable.photo_newyork};
         String [] record = new String[7];
         String [] records = getResources().getStringArray(R.array.cities_array);
         int rowCount = 0;

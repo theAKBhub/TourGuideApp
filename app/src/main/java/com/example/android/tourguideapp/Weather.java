@@ -28,5 +28,4 @@ public class Weather {
             mWeatherCondition[i] = weatherCondition[i];
         }
     }
-
 }

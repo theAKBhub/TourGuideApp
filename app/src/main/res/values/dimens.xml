@@ -31,7 +31,8 @@
     <dimen name="toolbar_elevation">4dp</dimen>
 
     <!-- City Icon Height -->
-    <dimen name="city_icon_height">150dp</dimen>
+    <dimen name="city_icon_width">150dp</dimen>
+    <dimen name="city_icon_height">160dp</dimen>
 
     <!-- Tab Layout padding -->
     <dimen name="tab_padding">12dp</dimen>
