@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int rowCount = 0;
 
         DatabaseHelper db = new DatabaseHelper(getApplicationContext());
-db.deleteCities();
+
         rowCount = db.getCitiesRowsCount();
 
         if (rowCount == 0) {
@@ -142,7 +142,7 @@ db.deleteCities();
         int rowCount = 0;
 
         DatabaseHelper db = new DatabaseHelper(getApplicationContext());
-  db.deletePlaces();
+
         rowCount = db.getPlacesRowsCount();
 
         if (rowCount == 0) {

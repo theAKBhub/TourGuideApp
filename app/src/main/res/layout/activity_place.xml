@@ -44,7 +44,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/colorText"
-                android:lineSpacingExtra="@dimen/dimen_5dp"
+                android:textSize="@dimen/font_small"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
                 android:gravity="left|right" />
 
             <Button
