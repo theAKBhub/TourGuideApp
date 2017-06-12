@@ -27,7 +27,7 @@ public class SightsFragment extends Fragment {
 
     private View view;
     private String mSelectedCity;
-    ListView mListView;
+    private ListView mListView;
 
 
     @Override

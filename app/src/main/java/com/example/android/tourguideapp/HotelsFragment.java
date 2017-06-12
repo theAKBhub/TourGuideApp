@@ -27,7 +27,7 @@ public class HotelsFragment extends Fragment {
 
     private View view;
     private String mSelectedCity;
-    ListView mListView;
+    private ListView mListView;
 
 
     @Override

@@ -51,26 +51,26 @@ public class PlacesAdapter extends ArrayAdapter<Places> {
 
         final Places currentPlace = getItem(position);
 
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+      //  View listItemView = convertView;
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_places, parent, false);
 
         }
 
-        ImageView imagePlace = (ImageView) listItemView.findViewById(R.id.place_image);
+        ImageView imagePlace = (ImageView) convertView.findViewById(R.id.place_image);
         int resId = mContext.getResources().getIdentifier(currentPlace.getPlaceImage(), "drawable", mContext.getPackageName());
         imagePlace.setImageResource(resId);
 
-        TextView textPlace = (TextView) listItemView.findViewById(R.id.text_place);
+        TextView textPlace = (TextView) convertView.findViewById(R.id.text_place);
         textPlace.setTypeface(mCustomFontBold);
         textPlace.setText(currentPlace.getPlace());
 
-        TextView textPlaceDesc = (TextView) listItemView.findViewById(R.id.text_desc);
+        TextView textPlaceDesc = (TextView) convertView.findViewById(R.id.text_desc);
         textPlaceDesc.setTypeface(mCustomFont);
         textPlaceDesc.setText(currentPlace.getPlaceDesc());
 
-        return listItemView;
+        return convertView;
     }
 
 }
