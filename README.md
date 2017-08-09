@@ -7,7 +7,7 @@ The goal was to create a tour guide app which presents relevant information abou
 multiple fragments. I used 4 cities for the purpose of this app - London, Paris, Rome and New York. For a city picked by the user, the app 
 presents relevant information in 5 different fragments:
 - 1st fragment displays key information about the city including local time (displayed as a digital clock) and 
-5-day weather forecast (using JSON parsing of OpenWeather).
+5-day weather forecast (using OpenWeather API).
 - 2nd fragment displays list of popular landmarks.
 - 3rd fragment displays list of popular tours.
 - 4th fragment displays list of some hotels.
