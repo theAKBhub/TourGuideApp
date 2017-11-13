@@ -25,7 +25,7 @@
     <string name="label_tab_5">Dining</string>
 
     <!-- OpenWeather App ID -->
-    <string name="openweather_appid">620f71466346984f2c78163e643df7aa</string>
+    <string name="openweather_appid">INSERT_OWM_APPID_HERE</string>
 
 
     <!-- -->
